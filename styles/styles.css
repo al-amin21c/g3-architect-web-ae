@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Work Sans";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -38,7 +38,7 @@
     border: none;
   }
   main {
-    max-width: 1365px;
+    max-width: 1100px;
     margin: 0   auto;
   }
   main> section {
@@ -93,7 +93,7 @@
     gap: 24px;
   }
   .our-features {
-    margin-left: 4.56rem;
+    margin-left: 3.56rem;
     max-width: 537px;
   }
   .feature-title {
@@ -115,7 +115,44 @@
     font-size: 2.8rem;
     font-weight: bold;
   }
-
+  /*****facts****/
+  #facts-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .facts-description{
+    max-width: 520px;
+    font-size: 1rem;
+    margin-bottom: 70px;
+  }
+  .fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 auto;
+  }
+  .fact-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #FF900E;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+  }
+  .fact-number {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .fact-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
   /**** responsive mobile approach***/
   @media screen and (max-width:576px) {
     .navbar, 
