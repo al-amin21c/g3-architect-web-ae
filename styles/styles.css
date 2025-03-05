@@ -67,3 +67,10 @@
   .banner-image {
     width: 100%;
   }
+  /****header responsive mobile approach***/
+  @media screen and (max-width:757px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    
+  }
