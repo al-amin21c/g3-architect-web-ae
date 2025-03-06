@@ -153,6 +153,23 @@
     font-size: 1.25rem;
     font-weight: 600;
   }
+  /****sponsors***/
+  .heading{
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sponsor-title {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0;
+  }
+  .sponsors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2rem;
+    filter: grayscale(100%);
+  }
   /**** responsive mobile approach***/
   @media screen and (max-width:576px) {
     .navbar, 
@@ -160,12 +177,25 @@
     .team  {
         flex-direction: column;
     }
+    
     .team-img-container {
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features {
         margin-left: 1rem;
         max-width: 537px;
+      }
+      .fact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+      }  
+      .sponsors{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 15px;
       }
     
   }
@@ -180,4 +210,16 @@
         margin-right: 1rem;
         max-width: 700px;
       }
+      .sponsors, .fact-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row: span;
+        justify-items: center;
+        align-items: center;
+        gap: 15px;
+      }
+      .sponsors img:nth-child(5){
+        grid-column: span 2;
+        grid-row: 3;
+    }
    }
